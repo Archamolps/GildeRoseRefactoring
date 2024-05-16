@@ -1,14 +1,7 @@
 package com.gildedrose;
 
 class GildedRose {
-    Item[] items;
-
-    public GildedRose(Item[] items) {
-        this.items = items;
-    }
-
-    public void updateQuality() {
-        for (Item item : items) {
+    public void updateQuality(Item item) {
             switch (getItemType(item)) {
                 case AGED_BRIE:
                     updateAgedBrie(item);
@@ -27,7 +20,6 @@ class GildedRose {
                     updateNormalItem(item);
                     break;
             }
-        }
     }
 
     private ItemType getItemType(Item item) {
