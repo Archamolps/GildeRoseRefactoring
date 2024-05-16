@@ -1,12 +1,5 @@
 package com.gildedrose;
 
-enum ItemType {
-    AGED_BRIE,
-    BACKSTAGE_PASS,
-    SULFURAS,
-    CONJURED,
-    NORMAL
-}
 class GildedRose {
     Item[] items;
 
@@ -109,11 +102,4 @@ class GildedRose {
     private boolean isLegendary(Item item) {
         return item.name.equals("Sulfuras, Hand of Ragnaros");
     }
-
-
-
-
-
-
-
 }
